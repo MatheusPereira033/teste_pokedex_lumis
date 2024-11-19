@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/25bb084813.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Pokédex</title>
+</head>
+<body>
+    <header>
+        <img src="../img/logo_pokedex.png" alt="pokedex_logo" id="logo_pokedex">
+
+        <div class="div-navigation">
+            <button id="home">Home</button>
+            <label id="pokedex">Pokédex</label>
+        </div>
+    </header>
+
+    <nav>
+        <div class="input-group">
+            <input id="search" type="text" class="input-field" placeholder="Faça uma busca pelo nome do pokémon">
+            <i class="fa-solid fa-magnifying-glass" id="input-icon"></i>
+        </div>
+    </nav>
+
+    <main>
+        <div class="listagemPokemon" id="listagemPokemon">
+        </div>
+    </main>
+
+    <footer>
+        <div class="pagination" id="pagination">
+            <button id="prevPage" disabled><i class="fa-solid fa-arrow-left"></i>Anterior</button>
+            <div id="pageNumbers"></div>
+            <button id="nextPage">Próximo<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
+</html>
